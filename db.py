@@ -8,7 +8,7 @@ DB_CONFIG = {
     "dbname": "da_18_trabalho_exec_financeira",
     "user": "postgres",
     "password": "12345",
-    "sslmode": "disable"  # troque para "require" se o servidor exigir SSL
+    "sslmode": "disable",  # troque para "require" se o servidor exigir SSL
 }
 
 
