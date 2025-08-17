@@ -56,7 +56,7 @@ def fetch_query(query: str, params: Optional[Tuple[Any]] = None) -> Tuple[List[T
         with conn:
             with conn.cursor() as cur:
                 cur.execute(query, params)
-                colnames = [desc[0] for desc in cur.description]
+                colnames = [desc[0] for desc in cur.description] # type: ignore
                 result = cur.fetchall()
         return result, colnames
     except DatabaseError:
